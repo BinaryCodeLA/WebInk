@@ -1,0 +1,8 @@
+#Activar rewrite
+#RewriteEngine on
+#ErrorDocument 404 http://www.dc0de.tech/error/index
+ 
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^www.dc0de.tech/(.+)/([0-9])/(.+)$ index.php?controller=$1&action=$2
+
